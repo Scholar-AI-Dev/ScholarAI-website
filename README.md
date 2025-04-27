@@ -21,8 +21,6 @@ These documents are hosted via GitHub Pages and are linked directly in the Schol
 - Privacy Policy: [https://your-github-username.github.io/ScholarAI-website/privacy-policy.html](https://your-github-username.github.io/ScholarAI-website/privacy-policy.html)
 - Terms of Service: [https://your-github-username.github.io/ScholarAI-website/terms-of-service.html](https://your-github-username.github.io/ScholarAI-website/terms-of-service.html)
 
-(Replace `your-github-username` with your actual GitHub username.)
-
 ## ⚠️ Important Notes
 
 - This repository **does not contain any application source code** for Scholar AI.
@@ -37,4 +35,4 @@ For inquiries related to Scholar AI, please contact:
 
 ---
 
-© [Insert Year] Scholar AI. All Rights Reserved.
+© [2025] Scholar AI. All Rights Reserved.
