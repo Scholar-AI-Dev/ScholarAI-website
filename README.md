@@ -20,6 +20,7 @@ These documents are hosted via GitHub Pages and are linked directly in the Schol
 
 - Privacy Policy: [https://scholar-ai-dev.github.io/ScholarAI-website/privacy-policy.html](https://scholar-ai-dev.github.io/ScholarAI-website/privacy-policy.html)
 - Terms of Service: [https://scholar-ai-dev.github.io/ScholarAI-website/terms-of-service.html](https://scholar-ai-dev.github.io/ScholarAI-website/terms-of-service.html)
+- Delete Account: [https://scholar-ai-dev.github.io/ScholarAI-website/delete-account.html](https://scholar-ai-dev.github.io/ScholarAI-website/delete-account.html)
 
 ## ⚠️ Important Notes
 
