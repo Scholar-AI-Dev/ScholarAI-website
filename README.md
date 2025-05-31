@@ -18,8 +18,8 @@ These documents are hosted via GitHub Pages and are linked directly in the Schol
 
 ## 🌐 Hosted Pages
 
-- Privacy Policy: [https://your-github-username.github.io/ScholarAI-website/privacy-policy.html](https://scholar-ai-dev.github.io/ScholarAI-website/privacy-policy.html)
-- Terms of Service: [https://your-github-username.github.io/ScholarAI-website/terms-of-service.html](https://scholar-ai-dev.github.io/ScholarAI-website/terms-of-service.html)
+- Privacy Policy: [https://scholar-ai-dev.github.io/ScholarAI-website/privacy-policy.html](https://scholar-ai-dev.github.io/ScholarAI-website/privacy-policy.html)
+- Terms of Service: [https://scholar-ai-dev.github.io/ScholarAI-website/terms-of-service.html](https://scholar-ai-dev.github.io/ScholarAI-website/terms-of-service.html)
 
 ## ⚠️ Important Notes
 
