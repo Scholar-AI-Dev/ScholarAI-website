@@ -6,6 +6,7 @@ This public repository hosts the official legal documents for the Scholar AI mob
 Scholar AI is an AI-powered educational assistant that allows users to submit academic questions via photo, image upload, or typing. The app delivers step-by-step solutions using advanced AI technology.
 
 Learn more at: [https://scholar-ai.io](https://scholar-ai.io)
+Home Page: [https://scholar-ai-dev.github.io/ScholarAI-website/index.html](https://scholar-ai-dev.github.io/ScholarAI-website/index.html)
 
 ## 📄 Documents Included
 
