@@ -3,9 +3,9 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Scholar AI - Your AI-Powered Study Assistant</title>
-    <meta name="description" content="Scholar AI is your intelligent study companion. Get instant help with homework, solve complex problems, and accelerate your learning with AI-powered assistance.">
-    <meta name="keywords" content="AI tutor, study assistant, homework help, education app, learning AI">
+    <title>Scholar AI Pro - Your Premium AI-Powered Study Assistant</title>
+    <meta name="description" content="Scholar AI Pro is your premium intelligent study companion. Get instant help with homework, solve complex problems, and accelerate your learning with advanced AI-powered assistance. Available on iOS and Android.">
+    <meta name="keywords" content="AI tutor, study assistant, homework help, education app, learning AI, Scholar AI Pro, iOS app, Android app, premium study tool">
     
     <!-- Favicon -->
     <link rel="icon" type="image/x-icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🎓</text></svg>">
@@ -75,6 +75,18 @@
             text-decoration: none;
         }
 
+        .pro-badge {
+            background: linear-gradient(135deg, #FFD700, #FFA500);
+            color: #333;
+            font-size: 0.7rem;
+            font-weight: 700;
+            padding: 0.2rem 0.5rem;
+            border-radius: 8px;
+            margin-left: 0.5rem;
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+        }
+
         .logo i {
             margin-right: 0.5rem;
             font-size: 1.8rem;
@@ -110,6 +122,59 @@
             font-weight: 700;
             margin-bottom: 1rem;
             line-height: 1.2;
+        }
+
+        .hero .subtitle {
+            font-size: 1.1rem;
+            margin-bottom: 0.5rem;
+            opacity: 0.8;
+            font-weight: 500;
+        }
+
+        .platform-badges {
+            display: flex;
+            gap: 1rem;
+            justify-content: center;
+            margin-top: 1.5rem;
+            flex-wrap: wrap;
+        }
+
+        .platform-badge {
+            display: flex;
+            align-items: center;
+            background: rgba(255, 255, 255, 0.1);
+            padding: 0.75rem 1.5rem;
+            border-radius: 12px;
+            text-decoration: none;
+            color: white;
+            transition: all 0.3s ease;
+            border: 1px solid rgba(255, 255, 255, 0.2);
+        }
+
+        .platform-badge:hover {
+            background: rgba(255, 255, 255, 0.2);
+            transform: translateY(-2px);
+        }
+
+        .platform-badge i {
+            font-size: 1.5rem;
+            margin-right: 0.5rem;
+        }
+
+        .platform-badge .badge-text {
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start;
+        }
+
+        .platform-badge .badge-title {
+            font-weight: 600;
+            font-size: 0.9rem;
+        }
+
+        .platform-badge .badge-subtitle {
+            font-size: 0.8rem;
+            opacity: 0.8;
         }
 
         .hero p {
@@ -189,6 +254,37 @@
             box-shadow: var(--shadow);
             text-align: center;
             transition: transform 0.3s ease;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .feature-card::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            height: 4px;
+            background: linear-gradient(135deg, var(--primary-color), var(--secondary-color));
+        }
+
+        .feature-card.premium {
+            border: 2px solid #FFD700;
+            background: linear-gradient(135deg, #FFF9E6, #FFFFFF);
+        }
+
+        .premium-badge {
+            position: absolute;
+            top: 1rem;
+            right: 1rem;
+            background: linear-gradient(135deg, #FFD700, #FFA500);
+            color: #333;
+            font-size: 0.7rem;
+            font-weight: 700;
+            padding: 0.3rem 0.6rem;
+            border-radius: 12px;
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
         }
 
         .feature-card:hover {
@@ -310,6 +406,16 @@
                 font-size: 1rem;
             }
 
+            .platform-badges {
+                flex-direction: column;
+                align-items: center;
+            }
+
+            .platform-badge {
+                width: 100%;
+                max-width: 300px;
+            }
+
             .cta-buttons {
                 flex-direction: column;
                 align-items: center;
@@ -360,7 +466,8 @@
         <nav class="container">
             <a href="#" class="logo">
                 <i class="fas fa-graduation-cap"></i>
-                Scholar AI
+                Scholar AI Pro
+                <span class="pro-badge">Pro</span>
             </a>
             <ul class="nav-links">
                 <li><a href="#features">Features</a></li>
@@ -373,14 +480,28 @@
     <!-- Hero Section -->
     <section class="hero">
         <div class="container">
-            <h1 class="fade-in-up">Your AI-Powered Study Assistant</h1>
-            <p class="fade-in-up">Get instant help with homework, solve complex problems, and accelerate your learning with Scholar AI's intelligent tutoring system.</p>
-            <div class="cta-buttons fade-in-up">
-                <a href="https://play.google.com/store/apps/details?id=io.scholarai.app" class="btn btn-primary">
-                    <i class="fab fa-google-play"></i>&nbsp;&nbsp;Download on Google Play
+            <div class="subtitle fade-in-up">Premium AI-Powered Learning</div>
+            <h1 class="fade-in-up">Scholar AI Pro</h1>
+            <p class="fade-in-up">The most advanced AI study assistant. Get instant help with homework, solve complex problems, and accelerate your learning with our premium intelligent tutoring system.</p>
+            <div class="platform-badges fade-in-up">
+                <a href="https://play.google.com/store/apps/details?id=io.scholarai.app" class="platform-badge">
+                    <i class="fab fa-google-play"></i>
+                    <div class="badge-text">
+                        <div class="badge-title">Google Play</div>
+                        <div class="badge-subtitle">Download for Android</div>
+                    </div>
                 </a>
+                <a href="https://apps.apple.com/app/scholar-ai-pro/id1234567890" class="platform-badge">
+                    <i class="fab fa-apple"></i>
+                    <div class="badge-text">
+                        <div class="badge-title">App Store</div>
+                        <div class="badge-subtitle">Download for iOS</div>
+                    </div>
+                </a>
+            </div>
+            <div class="cta-buttons fade-in-up">
                 <a href="#features" class="btn btn-secondary">
-                    <i class="fas fa-info-circle"></i>&nbsp;&nbsp;Learn More
+                    <i class="fas fa-star"></i>&nbsp;&nbsp;Explore Premium Features
                 </a>
             </div>
         </div>
@@ -389,49 +510,68 @@
     <!-- Features Section -->
     <section id="features" class="features">
         <div class="container">
-            <h2 class="section-title">Powerful Learning Features</h2>
+            <h2 class="section-title">Premium Learning Features</h2>
             <div class="features-grid">
-                <div class="feature-card fade-in-up">
+                <div class="feature-card premium fade-in-up">
+                    <div class="premium-badge">Pro</div>
                     <div class="feature-icon">
                         <i class="fas fa-camera"></i>
                     </div>
-                    <h3>Photo & Upload Questions</h3>
-                    <p>Take a photo of your homework or upload an image. Our advanced OCR technology extracts text and our AI provides detailed solutions.</p>
+                    <h3>Advanced Photo Recognition</h3>
+                    <p>Take photos of complex equations, diagrams, and handwritten notes. Our premium OCR technology with LaTeX rendering provides step-by-step solutions with perfect mathematical formatting.</p>
                 </div>
-                <div class="feature-card fade-in-up">
+                <div class="feature-card premium fade-in-up">
+                    <div class="premium-badge">Pro</div>
                     <div class="feature-icon">
-                        <i class="fas fa-comments"></i>
+                        <i class="fas fa-brain"></i>
                     </div>
-                    <h3>AI Chat Assistant</h3>
-                    <p>Chat with our intelligent AI tutor for personalized help. Ask follow-up questions and get explanations tailored to your learning style.</p>
+                    <h3>GPT-4 Powered AI Tutor</h3>
+                    <p>Chat with our advanced AI powered by GPT-4. Get personalized explanations, detailed problem-solving steps, and adaptive learning recommendations tailored to your academic level.</p>
                 </div>
                 <div class="feature-card fade-in-up">
                     <div class="feature-icon">
                         <i class="fas fa-history"></i>
                     </div>
-                    <h3>Question History</h3>
-                    <p>Keep track of all your questions and answers. Search through your learning history and review past solutions anytime.</p>
+                    <h3>Smart Question History</h3>
+                    <p>Access your complete learning history with advanced search and filtering. Organize by subject, difficulty, or date to track your academic progress over time.</p>
                 </div>
-                <div class="feature-card fade-in-up">
+                <div class="feature-card premium fade-in-up">
+                    <div class="premium-badge">Pro</div>
                     <div class="feature-icon">
-                        <i class="fas fa-book"></i>
+                        <i class="fas fa-atom"></i>
                     </div>
-                    <h3>Multi-Subject Support</h3>
-                    <p>Get help with Mathematics, Physics, Chemistry, Biology, History, Literature, and more. Our AI is trained across all academic subjects.</p>
+                    <h3>Multi-Subject Mastery</h3>
+                    <p>Expert support across Mathematics, Physics, Chemistry, Biology, History, Literature, and more. Our AI understands complex formulas, chemical equations, and historical contexts.</p>
                 </div>
                 <div class="feature-card fade-in-up">
                     <div class="feature-icon">
                         <i class="fas fa-mobile-alt"></i>
                     </div>
-                    <h3>Mobile-First Design</h3>
-                    <p>Beautiful, intuitive interface designed for mobile learning. Study anywhere, anytime with our responsive and user-friendly app.</p>
+                    <h3>Cross-Platform Excellence</h3>
+                    <p>Seamless experience across iOS and Android. Beautiful, intuitive interface with offline capabilities and real-time synchronization between devices.</p>
+                </div>
+                <div class="feature-card premium fade-in-up">
+                    <div class="premium-badge">Pro</div>
+                    <div class="feature-icon">
+                        <i class="fas fa-chart-line"></i>
+                    </div>
+                    <h3>Progress Analytics</h3>
+                    <p>Track your learning journey with detailed analytics. Monitor improvement in different subjects, identify knowledge gaps, and get personalized study recommendations.</p>
                 </div>
                 <div class="feature-card fade-in-up">
                     <div class="feature-icon">
                         <i class="fas fa-shield-alt"></i>
                     </div>
-                    <h3>Privacy & Security</h3>
-                    <p>Your data is secure with us. We use industry-standard encryption and never share your personal information with third parties.</p>
+                    <h3>Enterprise-Grade Security</h3>
+                    <p>Your academic data is protected with bank-level encryption. We never share your personal information and maintain strict privacy standards for student data.</p>
+                </div>
+                <div class="feature-card premium fade-in-up">
+                    <div class="premium-badge">Pro</div>
+                    <div class="feature-icon">
+                        <i class="fas fa-infinity"></i>
+                    </div>
+                    <h3>Unlimited Questions</h3>
+                    <p>Ask unlimited questions without restrictions. Get instant help with any academic problem, from basic homework to advanced research questions.</p>
                 </div>
             </div>
         </div>
@@ -440,23 +580,23 @@
     <!-- App Info Section -->
     <section id="about" class="app-info">
         <div class="container">
-            <h2 class="section-title">Why Choose Scholar AI?</h2>
+            <h2 class="section-title">Why Choose Scholar AI Pro?</h2>
             <div class="info-grid">
                 <div class="info-card">
-                    <h4><i class="fas fa-rocket"></i> Instant Solutions</h4>
-                    <p>Get immediate help with your academic questions. No waiting for tutors or searching through textbooks.</p>
+                    <h4><i class="fas fa-rocket"></i> Lightning-Fast Solutions</h4>
+                    <p>Get instant, accurate answers to complex academic problems. Our advanced AI processes questions in seconds, not minutes.</p>
                 </div>
                 <div class="info-card">
-                    <h4><i class="fas fa-brain"></i> Smart Learning</h4>
-                    <p>Our AI adapts to your learning style and provides explanations that help you understand, not just memorize.</p>
+                    <h4><i class="fas fa-graduation-cap"></i> Academic Excellence</h4>
+                    <p>Designed by educators and AI researchers specifically for students. Understand concepts deeply, not just get quick answers.</p>
                 </div>
                 <div class="info-card">
-                    <h4><i class="fas fa-chart-line"></i> Track Progress</h4>
-                    <p>Monitor your learning journey with detailed history and analytics of your questions and subjects.</p>
+                    <h4><i class="fas fa-mobile-alt"></i> Study Anywhere</h4>
+                    <p>Available on both iOS and Android with seamless sync. Continue your studies across all your devices without interruption.</p>
                 </div>
                 <div class="info-card">
-                    <h4><i class="fas fa-users"></i> Student-Focused</h4>
-                    <p>Built by educators and developers who understand the challenges students face in their academic journey.</p>
+                    <h4><i class="fas fa-star"></i> Premium Quality</h4>
+                    <p>Access to the most advanced AI models and features. Get the best possible learning experience with our Pro subscription.</p>
                 </div>
             </div>
         </div>
@@ -467,8 +607,8 @@
         <div class="container">
             <div class="footer-content">
                 <div class="footer-section">
-                    <h3>Scholar AI</h3>
-                    <p>Empowering students worldwide with AI-powered learning assistance. Making education more accessible, efficient, and personalized.</p>
+                    <h3>Scholar AI Pro</h3>
+                    <p>Empowering students worldwide with premium AI-powered learning assistance. Making education more accessible, efficient, and personalized with advanced technology.</p>
                 </div>
                 <div class="footer-section">
                     <h3>Quick Links</h3>
@@ -483,7 +623,7 @@
                     <h3>Download</h3>
                     <ul class="footer-links">
                         <li><a href="https://play.google.com/store/apps/details?id=io.scholarai.app">Google Play Store</a></li>
-                        <li><a href="#" style="color: #666;">iOS App Store (Coming Soon)</a></li>
+                        <li><a href="https://apps.apple.com/app/scholar-ai-pro/id1234567890">iOS App Store</a></li>
                     </ul>
                 </div>
                 <div class="footer-section">
@@ -495,7 +635,7 @@
                 </div>
             </div>
             <div class="footer-bottom">
-                <p>&copy; 2024 Scholar AI. All rights reserved. Made with ❤️ for students worldwide.</p>
+                <p>&copy; 2024 Scholar AI Pro. All rights reserved. Made with ❤️ for students worldwide.</p>
             </div>
         </div>
     </footer>
